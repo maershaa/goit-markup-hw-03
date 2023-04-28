@@ -26,27 +26,28 @@
 
 <body>
   <!-- Шапка сайта -->
-  <header>
-    <div class="container main-nav">
+  <header class="container header">
+
+    <nav class="main-nav">
+      <!-- Логотип это как правило ссылка. Оформляем соответственно 
+                          ./index.html - отправляет на главную страничку-->
       <!-- Оборачиваем в nav логотип и навигационное меню. ссылки на номер телефона не относятся к навигации-->
       <a href="./index.html" class="logo-style link"> Web<span class="nav-logo">Studio</span></a>
-      <nav>
-        <!-- Логотип это как правило ссылка. Оформляем соответственно 
-                          ./index.html - отправляет на главную страничку-->
-        <ul class="site-nav list">
-          <li class="item"><a href="./index.html" class="link"> Studio </a></li>
-          <li class="item"><a href="./portfolio.html" class="link"> Portfolio </a></li>
-          <li class="item"><a href="" class="link"> Contacts</a></li>
-        </ul>
-      </nav>
 
-      <address class="list header-address">
-        <ul class="list">
-          <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
-          <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
-        </ul>
-      </address>
-    </div>
+      <ul class="site-nav list">
+        <li class="item"><a href="./index.html" class="link"> Studio </a></li>
+        <li class="item"><a href="./portfolio.html" class="link"> Portfolio </a></li>
+        <li class="item"><a href="" class="link"> Contacts</a></li>
+      </ul>
+    </nav>
+
+    <address class="list header-address">
+      <ul class="list">
+        <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
+        <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+      </ul>
+    </address>
+
 
   </header>
 
@@ -54,8 +55,10 @@
   <main>
 
     <section class="hero">
-      <h1 class="hero-title">Effective Solutions for Your Business</h1>
-      <button type="button" class="main-button"> Order Service</button>
+      <div class="container">
+        <h1 class="hero-title">Effective Solutions for Your Business</h1>
+        <button type="button" class="main-button"> Order Service</button>
+      </div>
     </section>
 
     <!-- SECTION 2 - Our goals -->
@@ -119,28 +122,39 @@
         <ul class="team-list list">
           <li class="team-member">
             <img src="./images/MarkGuerrero.jpg" alt="Mark Guerrero" width="264">
-            <h3 class="title">Mark Guerrero</h3>
-            <p class="text">Product Designer</p>
+            <div class="member-and-position">
+              <h3 class="title">Mark Guerrero</h3>
+              <p class="text">Product Designer</p>
+            </div>
+
 
           </li>
           <li class="team-member">
             <img src="./images/TomFord.jpg" alt="Tom Ford" width="264">
-            <h3 class="title">Tom Ford</h3>
-            <p class="text">Frontend Developer</p>
+            <div class="member-and-position">
+              <h3 class="title">Tom Ford</h3>
+              <p class="text">Frontend Developer</p>
+            </div>
 
           </li>
           <li class="team-member">
 
             <img src="./images/CamilaGarcia.jpg" alt="Camila Garcia" width="264">
-            <h3 class="title">Camila Garcia</h3>
-            <p class="text">Marketing</p>
+            <div class="member-and-position">
+              <h3 class="title">Camila Garcia</h3>
+              <p class="text">Marketing</p>
+            </div>
+
 
           </li>
           <li class="team-member">
 
             <img src="./images/DanielWilson.jpg" alt="Daniel Wilson" width="264">
-            <h3 class="title">Daniel Wilson</h3>
-            <p class="text">UI Designer</p>
+            <div class="member-and-position">
+              <h3 class="title">Daniel Wilson</h3>
+              <p class="text">UI Designer</p>
+            </div>
+
 
           </li>
         </ul>

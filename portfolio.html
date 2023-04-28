@@ -25,27 +25,29 @@
 
 <body>
     <!-- Шапка сайта -->
-    <header>
-        <div class="container main-nav">
+    <!-- Шапка сайта -->
+    <header class="container header">
+
+        <nav class="main-nav">
+            <!-- Логотип это как правило ссылка. Оформляем соответственно 
+                              ./index.html - отправляет на главную страничку-->
             <!-- Оборачиваем в nav логотип и навигационное меню. ссылки на номер телефона не относятся к навигации-->
             <a href="./index.html" class="logo-style link"> Web<span class="nav-logo">Studio</span></a>
-            <nav>
-                <!-- Логотип это как правило ссылка. Оформляем соответственно 
-                              ./index.html - отправляет на главную страничку-->
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link"> Studio </a></li>
-                    <li class="item"><a href="./portfolio.html" class="link"> Portfolio </a></li>
-                    <li class="item"><a href="" class="link"> Contacts</a></li>
-                </ul>
-            </nav>
 
-            <address class="list header-address">
-                <ul class="list">
-                    <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
-                    <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
-                </ul>
-            </address>
-        </div>
+            <ul class="site-nav list">
+                <li class="item"><a href="./index.html" class="link"> Studio </a></li>
+                <li class="item"><a href="./portfolio.html" class="link"> Portfolio </a></li>
+                <li class="item"><a href="" class="link"> Contacts</a></li>
+            </ul>
+        </nav>
+
+        <address class="list header-address">
+            <ul class="list">
+                <li class="item"> <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a> </li>
+                <li class="item"> <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a></li>
+            </ul>
+        </address>
+
 
     </header>
 
@@ -66,54 +68,81 @@
                 <ul class="list portfolio-items">
                     <li class="item"> <a href="" class="link"><img src="./images/1app.jpg" alt="banking App"
                                 width="360">
-                            <h2 class="portfolio-items-header">Banking App Interface Concept</h2>
-                            <p class="text">App</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Banking App Interface Concept</h2>
+                                <p class="text">App</p>
+                            </div>
+
                         </a>
                     </li>
                     <li class="item"> <a href="" class="link"><img src="./images/2mark.jpg" alt="payment" width="360">
-                            <h2 class="portfolio-items-header">Cashless Payment</h2>
-                            <p class="text">Marketing</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Cashless Payment</h2>
+                                <p class="text">Marketing</p>
+                            </div>
+
                         </a>
                     </li>
                     <li class="item"> <a href="" class="link"><img src="./images/3app.jpg" alt="computer screen"
                                 width="360">
-                            <h2 class="portfolio-items-header">Meditation App</h2>
-                            <p class="text">App</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Meditation App</h2>
+                                <p class="text">App</p>
+                            </div>
+
                         </a>
                     </li>
                     <li class="item"> <a href="" class="link"> <img src="./images/4mark.jpg" alt="inside the car"
                                 width="360">
-                            <h2 class="portfolio-items-header">Taxi Service</h2>
-                            <p class="text">Marketing</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Taxi Service</h2>
+                                <p class="text">Marketing</p>
+                            </div>
+
                         </a>
                     </li>
                     <li class="item"> <a href="" class="link"> <img src="./images/5design.jpg" alt="moon illustration"
                                 width="360">
-                            <h2 class="portfolio-items-header">Screen Illustrations</h2>
-                            <p class="text">Design</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Screen Illustrations</h2>
+                                <p class="text">Design</p>
+                            </div>
+
                         </a>
                     </li>
                     <li class="item"> <a href="" class="link"> <img src="./images/6mark.jpg" alt="curly hair girl"
                                 width="360">
-                            <h2 class="portfolio-items-header">Online Courses</h2>
-                            <p class="text">Marketing</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Online Courses</h2>
+                                <p class="text">Marketing</p>
+                            </div>
+
                         </a>
                     </li>
                     <li> <a href="" class="link"> <img src="./images/7design.jpg" alt="examples of instagram srories"
                                 width="360">
-                            <h2 class="portfolio-items-header">Instagram Stories Concept</h2>
-                            <p class="text">Design</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Instagram Stories Concept</h2>
+                                <p class="text">Design</p>
+                            </div>
+
                         </a>
                     </li>
                     <li class="item"> <a href="" class="link"> <img src="./images/8web.jpg" alt="mesh with vegetables"
                                 width="360">
-                            <h2 class="portfolio-items-header">Organic Food</h2>
-                            <p class="text">Web Site</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Organic Food</h2>
+                                <p class="text">Web Site</p>
+                            </div>
+
                         </a>
                     </li>
                     <li class="item"> <a href="" class="link"> <img src="./images/9web.jpg" alt="coffee" width="360">
-                            <h2 class="portfolio-items-header">Fresh Coffee</h2>
-                            <p class="text">Web Site</p>
+                            <div class="examples">
+                                <h2 class="portfolio-items-header">Fresh Coffee</h2>
+                                <p class="text">Web Site</p>
+                            </div>
+
                         </a>
                     </li>
                 </ul>
