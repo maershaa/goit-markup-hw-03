@@ -36,6 +36,7 @@ html {
 
 
 .container {
+
     /* 30px =боковые отступы и 1128px = ширина странички */
 width: 1158px;
 
@@ -88,6 +89,12 @@ img {
 
 .header {
 border: 1px solid #e7e9fc;
+}
+
+
+.header-style {
+display: flex;
+margin: 0 auto;
 }
 
 .main-nav {
@@ -177,22 +184,35 @@ margin-right: 40px;
 }
 
 /* Задаем флекс для списка (номер телеона и почта)  */
-.header-address .list {
+.header-address-list {
     display: flex;
     margin-left: 330px;
+
+}
+
+.header-address-list .item {
+    margin-right: 40px;
+
+}
+
+.header-address-list .item:last-child {
+    margin-right: 0;
 }
 
 /* Стиль для элементов списка (номер телефона и почта в шапке) */
 .header-address .link {
     letter-spacing: 0.02em;
     color: var(--body-text-color);
+
+    padding: 24px 0;
 }
 
 /* Применяем отступ для кнопок c телефоном и почтой
-Можно с not last child */
+Можно с not last child
 .header-address .item + .item {
 margin-left: 40px;
-}
+} */
+
 
 
 /* Стиль для элементов списка (номер телефона и почта в шапке) ПРИ НАВЕДЕНИИ*/
@@ -311,7 +331,9 @@ max-width: 496px;
 
 
 /* СЕКЦИЯ 2 */
-
+.goals-list p {
+    text-align: left;
+}
 /* Общий стиль для аналогчиных заголовков секции  2 и 4 */
 .goals-list .title,
 .team-member .title,
@@ -348,8 +370,8 @@ max-width: 496px;
 display: flex;
 }
 
-.goals-list {
-    flex-basis: calc((100% - 72px) / 4)
+.goals-list .item {
+    width: calc((100% - 72px) / 4);
 }
 /* Общий стиль внешних отступов margin для аналогчиных списков */
 .goals-list .item:not(:last-child),
@@ -438,6 +460,7 @@ border-radius: 0px 0px 4px 4px;
 
 .porfolio-nav {
 justify-content: center;
+margin-bottom: 72px;
 }
 
 
@@ -466,11 +489,18 @@ width:360px;
     background: #FFFFFF;
     border: 1px solid #E7E9FC;
  }
- .portfolio-items > .examples {
+
+  .portfolio-items .item:nth-child(3n + 1) {
+
+      margin-right: 0;
+
+  }
+
+ .portfolio-items .examples {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    
+
  }
 
  /* Убираем у каждого крайнего справа элемента
