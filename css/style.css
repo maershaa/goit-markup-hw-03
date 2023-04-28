@@ -469,12 +469,6 @@ justify-content: center;
 margin-bottom: 72px;
 }
 
-
-.portfolio-items img{
-margin-bottom: 32px;
-}
-
-
 /* Задаем флекс для списка с фотками. Необходимо сделать 3 на строке,
 а остальныеи перенести ниже, а так же сделать внешние отступы вправо
 по 24px на все фотки кроме крайних в ряду */
@@ -487,13 +481,12 @@ width:360px;
  }
 
   .portfolio-items .item {
-    padding-bottom: 32px;;
-
+    
      margin-right: 24px;
      margin-bottom: 48px;
 
     background: #FFFFFF;
-    border: 1px solid #E7E9FC;
+    
  }
 
   .portfolio-items .item:nth-child(3n+3) {
@@ -502,7 +495,8 @@ width:360px;
   }
 
  .portfolio-items .examples {
-    
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
     border-top: none;
 
  }
