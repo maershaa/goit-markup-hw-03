@@ -181,6 +181,9 @@ margin-right: 40px;
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
+
+
+    padding: 24px 0;
 }
 
 /* Задаем флекс для списка (номер телеона и почта)  */
@@ -204,7 +207,6 @@ margin-right: 40px;
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 
-    padding: 24px 0;
 }
 
 /* Применяем отступ для кнопок c телефоном и почтой
@@ -286,6 +288,8 @@ text-align: center;
     height: 56px;
     padding: 16px 32px;
     
+    margin-right: auto;
+    margin-left: auto;
 
 }
 
@@ -324,9 +328,11 @@ text-align: center;
         text-align: center;
         letter-spacing: 0.02em;
 
-max-width: 496px;
+        max-width: 496px;
         margin-top: 0;
         margin-bottom: 48px;
+        margin-right: auto;
+        margin-left: auto;
 }
 
 
